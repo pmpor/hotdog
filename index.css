@@ -1,0 +1,35 @@
+header:after,
+footer:after,
+main:after,
+section:after {
+  content: "";
+  display: table;
+  clear:both;
+}
+
+main {
+  max-width:1440px;
+  margin:0 auto;
+}
+
+
+/* For the horizontal line in content area*/
+.home-banner .folio-text::before {
+  background: #84c6b7;
+  top: .8em;
+}
+.folio-text:before {
+  content: '';
+  height: .1875rem;
+  width: 1.875rem;
+  position: absolute;
+  left: -3.125rem;
+  top: 50%;
+  background: #dedede;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
