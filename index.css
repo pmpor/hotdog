@@ -347,8 +347,6 @@ template {
 body {
   color: #242529;
   font: 1em/1.5 'Open Sans';
-  -webkit-font-feature-settings: "kern" 1;
-  font-feature-settings: "kern" 1;
   text-rendering: optimizeLegibility;
   line-height: 1.5;
   position:relative;
@@ -358,7 +356,9 @@ body {
 }
 
 header {
-  box-shadow: 0 20px 10px -10px inset #333;
+  padding-top:499px;
+  background:url('images/header/dirty-dogs-header-bg@1x.png') top center repeat-x;
+  box-shadow: 0 50px 50px -50px inset #333;
 }
 
 header:after,
@@ -423,13 +423,14 @@ nav ul li {
   padding:0 39px;
 }
 
-button.jumbotron--btn {
+.btn {
   border: none;
   background: #285782;
   color: #FFFFFF;
   border-radius:5px;
   padding:25px 38px;
   font-weight:600;
+  cursor: pointer;
 }
 
 
@@ -487,10 +488,6 @@ button.jumbotron--btn {
   width:60%;
 }
 
-.photo-row {
-  height:499px;
-  background:url('images/header/dirty-dogs-header-bg@1x.png') center center repeat-x;
-}
 
 footer {
   display:flex;
