@@ -6,14 +6,15 @@
   <title>Page Title</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="google" content="notranslate">
+  <link rel="stylesheet" type="text/css" media="screen" href="normalize.css" />
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
   <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
 </head>
 <body>
+  
   <header class="main-header">
-    <!--TODO: Add two rows for images-->
     <nav class="main-nav">
-      <ul class="main-nav--wrapper">
+      <ul class="main-nav__wrapper">
         <li><a href="#menu">Menu</a></li>
         <li><a href="#catering">Catering</a></li>
         <li><a href="#about-us">About Us</a></li>
@@ -22,10 +23,9 @@
     </nav>
   </header>
 
-  <!-- Use Flexbox to turn into alternating grid-->
   <main class="main-content" role="main">
     <section class="jumbotron">
-      <div class="jumbotron--content">
+      <div class="jumbotron__wrapper">
         <img src="images/content/dirty-dogs-hotdog-icon@1x.png" />
         <h1>Dirty Dogs serves all-beef, vegan and vegetarian hot dogs.</h1>
         <button class="btn">More Dogs ‘n Make Em Hot</button>
@@ -33,6 +33,8 @@
     </section>
 
     <section class="hotdog-types">
+
+      <!-- All-Beef -->
       <div class="hotdog-types--grouping">
         <div class="hotdog-types--grouping-text">
           <div class="hotdog-types--grouping-text-container">
@@ -45,7 +47,9 @@
         <div class="hotdog-types--grouping-image" style="background-image:url(images/content/hotdog-all-beef-closeup@1x.png);">
         </div>
       </div>
+      <!-- /end All-Beef-->
 
+      <!-- Vegan -->
       <div class="hotdog-types--grouping">
         <div class="hotdog-types--grouping-text">
           <div class="hotdog-types--grouping-text-container">
@@ -58,7 +62,9 @@
         <div class="hotdog-types--grouping-image" style="background-image:url(images/content/hotdog-vegan-closeup@1x.png);">
         </div>
       </div>
+      <!-- /end Vegan -->
 
+      <!-- Vegetarian -->
       <div class="hotdog-types--grouping">
         <div class="hotdog-types--grouping-text">
           <div class="hotdog-types--grouping-text-container">
@@ -72,6 +78,8 @@
         <div class="hotdog-types--grouping-image" style="background-image:url(images/content/hotdog-vegetarian-closeup@1x.png);">
         </div>
       </div>
+      <!-- /end Vegetarian-->
+
     </section>
   </main>
 
