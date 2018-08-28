@@ -3,78 +3,21 @@ body {
   font: 1em/1.5 'Open Sans';
   text-rendering: optimizeLegibility;
   position:relative;
-
-  margin:0;
-  padding:0;
 }
 
 header {
   padding-top:499px;
-  background:url('images/header/dirty-dogs-header-bg@1x.png') top center repeat-x;
-  box-shadow: 0 50px 50px -50px inset #333;
-}
-
-header:after,
-footer:after,
-main:after,
-section:after {
-  content: "";
-  display: table;
-  clear:both;
+  background:url('../images/header/dirty-dogs-header-bg@1x.png') top center repeat-x;
+  box-shadow: 0 150px 100px -100px inset rgb(0, 0, 0, .5)
 }
 
 main {
   margin:0 auto;
 }
 
-.jumbotron {
-  background-color:#FBFAFA;
-  text-align:center;
-  height:75vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color:#555559;
-}
 
-.jumbotron h1 {
-  margin:1.5em auto;
-  font-size:2.5em;
-  font-weight:300;
-}
 
-.jumbotron__wrapper {
-  max-width:50%;
-}
 
-nav {
-  box-shadow: 0 10px 10px -10px #666;
-  padding:37px 0;
-  margin-top: -18px;
-  z-index: 1000;
-  background-color:#fff;
-  position:relative;
-  font-weight:600;
-  font-size:1.25em;
-}
-
-nav ul {
-  padding:0;
-  margin:0;
-  list-style: none;
-  text-align: center;
-}
-
-nav a {
-  color:#2e2e2e;
-  text-decoration: none;
-}
-
-nav ul li {
-  display:inline-block;
-  text-transform:uppercase;
-  padding:0 39px;
-}
 
 .btn {
   border: none;
@@ -92,7 +35,9 @@ nav ul li {
   height: .1875rem;
   width: 1.875rem;
   position: absolute;
-  background: #286782;
+  background: #84959C;
+  margin-top: .75em;
+  margin-left: -2em;
 }
 
 .hotdog-types--grouping {
@@ -141,8 +86,7 @@ nav ul li {
   width:60%;
 }
 
-
-footer {
+.main-footer {
   display:flex;
   align-items:center;
   justify-content: space-between;

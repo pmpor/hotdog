@@ -1,0 +1,19 @@
+.jumbotron {
+  background-color: $gray-lightest;
+  text-align:center;
+  height:75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#555559;
+
+  h1 {
+    margin:1.5em auto;
+    font-size:2.5em;
+    font-weight:$font-weight-light;
+  }
+}
+
+.jumbotron__wrapper {
+  max-width:50%;
+}
