@@ -11,10 +11,6 @@ header {
   box-shadow: 0 150px 100px -100px inset rgb(0, 0, 0, .5)
 }
 
-main {
-  margin:0 auto;
-}
-
 
 
 
@@ -41,18 +37,11 @@ main {
 }
 
 .hotdog-types--grouping {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex-grow: 1;
-  -ms-flex-positive: 1;
   flex-grow: 1;
+  flex-wrap:wrap;
   flex-direction: row; 
-  -webkit-flex-direction: row;
-  -webkit-flex-wrap: wrap;
-  -webkit-justify-content: space-around;
+  justify-content: space-around;
 }
 
 .hotdog-types--grouping-text {
@@ -95,11 +84,10 @@ main {
   font-weight:400;
 }
 
-@media (max-width: 840px) {
+@media (max-width: 992px) {
   .hotdog-types--grouping {
     height: 40em;
     display: -webkit-flex;
-    -webkit-flex-direction: column;
     flex-direction: column; 
    }
   .hotdog-types--grouping-text,
@@ -107,39 +95,9 @@ main {
     order:vertical;
   }
   .hotdog-types--grouping:nth-child(odd) .hotdog-types--grouping-text  {
-    -webkit-box-ordinal-group:0;
-    -webkit-order: 0;
-    -ms-flex-order: 0;
     order: 0;
   }
-  .hotdog-types--grouping-text p {
-    padding: 1em;
-  }
   .hotdog-types--grouping-text-container {
-    width: 90%;
+    width: 80%;
   }
 }
-
-
-
-/* For the horizontal line in content area
-.home-banner .folio-text::before {
-  background: #84c6b7;
-  top: .8em;
-}
-.folio-text:before {
-  content: '';
-  height: .1875rem;
-  width: 1.875rem;
-  position: absolute;
-  left: -3.125rem;
-  top: 50%;
-  background: #dedede;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-*, *::before, *::after {
-  box-sizing: inherit;
-}
-*/
