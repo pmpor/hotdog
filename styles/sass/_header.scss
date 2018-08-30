@@ -1,0 +1,37 @@
+.header {
+  padding-top: 250px;
+  /* Exact measurement from PSD*/
+  background: url('../../images/optimized/header/dirty-dogs-header-bg@1x.jpg') top center repeat-x;
+  box-shadow: 0 150px 100px -100px inset rgba(0, 0, 0, .7);
+  transition: all .25s ease-in-out;
+}
+
+.header__ig {
+  position: absolute;
+  top: 1em;
+  right: 1em;
+  color: $white;
+  font: $font-proxima-nova;
+  font-weight: $font-weight-semi;
+  font-size: convert(15.24, px, ems);
+  cursor: pointer;
+}
+
+.header__ig__svg {
+  width:1.4em;
+  height:1.4em;
+  margin-right:.5em;
+}
+
+.header__ig__link {
+  text-decoration: none;
+  color: $white;
+  display:flex;
+}
+
+@media (min-height: 900px) {
+  .header {
+    padding-top: 499px;
+    transition: all .25s ease-in-out;
+  }
+}

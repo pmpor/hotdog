@@ -1,0 +1,39 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $gray-light;
+  font-size: convert(14, px, ems);
+  padding: 0 1em;
+  min-height: 74px;
+  color:$gray-medium;
+}
+
+.footer__contact {
+  display: flex;
+}
+
+.footer__contact__item {
+  border-right: 1px solid $gray-medium;
+  display: inline-block;
+  padding: 0 10px;
+
+  &:last-child {
+    border-right: none;
+    padding-right: 0;
+  }
+}
+
+.footer__contact__anchor {
+  text-decoration: none;
+  color:$gray-medium;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-wrap: wrap;
+    font-size:.8em;
+    align-items: center;
+    align-content: center;
+  }
+}
