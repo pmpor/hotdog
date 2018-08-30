@@ -1,31 +1,31 @@
 .header__nav {
   box-shadow: 0 10px 10px -10px #CCCCCC;
-  display:flex;
-  justify-content:center;
+  display: flex;
+  justify-content: center;
   margin-top: -18px;
-  height:100px;
+  height: 100px;
   z-index: 1000;
   background-color: $white;
-  position:relative;
-  font-weight:600;
-  font-size:1.25em;
-  flex-direction:column;
+  position: relative;
+  font-weight: 600;
+  font-size: 1.25em;
+  flex-direction: column;
 }
 
 .nav__list {
-  padding:0;
-  margin:0;
+  padding: 0;
+  margin: 0;
   list-style: none;
   text-align: center;
 }
 
 .nav__anchor {
-  color:#2e2e2e;
+  color: $gray-dark;
   text-decoration: none;
 }
 
 .nav__item {
-  display:inline-block;
-  text-transform:uppercase;
-  padding:0 39px;
+  display: inline-block;
+  text-transform: uppercase;
+  padding: 0 39px;
 }
