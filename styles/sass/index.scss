@@ -1,3 +1,114 @@
 @import 'variables';
 @import 'navigation';
 @import 'jumbotron';
+
+body {
+  font: $font-open-sans;
+  text-rendering: optimizeLegibility;
+  position:relative;
+}
+
+.header {
+  padding-top:499px; /* Exact measurement from PSD*/
+  background:url('../../images/header/dirty-dogs-header-bg@1x.png') top center repeat-x;
+  box-shadow: 0 150px 100px -100px inset rgba(0, 0, 0, .5);
+  transition:all .25s ease-in-out;
+}
+
+.hotdog-types__heading:before {
+  content: '';
+  height: .1875rem;
+  width: 1.875rem;
+  position: absolute;
+  background: #84959C;
+  margin-top: .75em;
+  margin-left: -2em;
+}
+
+.hotdog-types__grouping {
+  display: flex;
+  flex-grow: 1;
+  flex-wrap:wrap;
+  flex-direction: row; 
+  justify-content: space-around;
+
+  &:nth-child(odd) .hotdog-types__grouping__text {
+    order: -1;
+  }
+}
+
+.hotdog-types__grouping__text {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #555559;
+}
+
+.hotdog-types__grouping__image__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  order: -1;
+}
+
+.hotdog-types__grouping__image {
+  height:100%;
+  width:100%;
+  object-fit: cover;
+}
+
+.hotdog-types__grouping__text__wrapper {
+  width:60%;
+}
+
+.footer {
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  background-color:#EFEFEF;
+  font-family:'Open Sans';
+  font-weight:400;
+  font-size:.875em;
+  padding:0 1em;
+  height:74px;
+}
+
+.footer__contact {
+  display:flex;
+}
+
+.footer__contact__item {
+  border-right: 1px solid $gray-medium;
+  display:inline-block;
+  padding:0 10px;
+
+  &:last-child {
+    border-right:none;
+    padding-right:0;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding-top:250px;
+    transition:all .25s ease-in-out;
+  }
+  .hotdog-types__grouping {
+    height: 40em;
+    display: -webkit-flex;
+    flex-direction: column; 
+   }
+  .hotdog-types__grouping__text,
+  .hotdog-types__grouping__image  {
+    order:vertical;
+  }
+  .hotdog-types__grouping:nth-child(odd) .hotdog-types__grouping__text  {
+    order: 0;
+  }
+  .hotdog-types__grouping-text-container {
+    width: 80%;
+  }
+}
+
