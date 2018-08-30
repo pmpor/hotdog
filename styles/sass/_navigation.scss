@@ -10,6 +10,7 @@
   font-weight: 600;
   font-size: convert(20, px, ems);
   flex-direction: column;
+  flex-wrap:nowrap;
 }
 
 .nav__list {
@@ -28,6 +29,13 @@
   display: inline-block;
   text-transform: uppercase;
   padding: 0 convert(39, px, ems);
+
+  &:first-child {
+    padding-left:0;
+  }
+  &:last-child {
+    padding-right:0;
+  }
 }
 
 @media (max-width: 768px) {
@@ -36,6 +44,6 @@
   }
 
   .nav__item {
-    padding: 0 convert(10, px, ems);
+    padding: 0 convert(5, px, ems);
   }
 }
