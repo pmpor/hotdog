@@ -1,13 +1,20 @@
 @import 'variables';
+@import 'mixins';
 @import 'navigation';
 @import 'jumbotron';
 
+/* Common Styles */
 body {
   font: $font-open-sans;
   text-rendering: optimizeLegibility;
   position: relative;
 }
 
+.hidden {
+  display:none;
+}
+
+/* Component Styles */
 .header {
   padding-top: 250px;
   /* Exact measurement from PSD*/
@@ -21,8 +28,9 @@ body {
   top: 1em;
   right: 1em;
   color: $white;
+  font: $font-proxima-nova;
   font-weight: $font-weight-semi;
-  font-size: .875em;
+  font-size: convert(15.24, px, ems);
   cursor: pointer;
 }
 
@@ -32,24 +40,29 @@ body {
   margin-right:.5em;
 }
 
-.hidden {
-  display:none;
-}
-
 .header__ig__link {
   text-decoration: none;
   color: $white;
   display:flex;
 }
 
-.hotdog-types__heading:before {
-  content: '';
-  height: .1875rem;
-  width: 1.875rem;
-  position: absolute;
-  background: $gray-blue;
-  margin-top: .75em;
-  margin-left: -2em;
+.hotdog-types__heading {
+  font-size: convert(23.97, px, ems);
+  &:before {
+    content: '';
+    height: .1875rem;
+    width: 1.875rem;
+    position: absolute;
+    background: $gray-blue;
+    margin-top: .75em;
+    margin-left: -1.75em;
+  }
+}
+
+.hotdog-types__heading--blue {
+  &:before {
+    background: $blue-medium;
+  }
 }
 
 .hotdog-types__grouping {
@@ -70,7 +83,9 @@ body {
   align-items: center;
   justify-content: center;
   flex: 1;
-  color: #555559;
+  font-size: convert(17.98, px, ems);
+  font-weight:$font-weight-light;
+  color: $gray-medium;
 }
 
 .hotdog-types__grouping__image__wrapper {
@@ -84,7 +99,7 @@ body {
 }
 
 .hotdog-types__grouping__text__wrapper {
-  width: 60%;
+  width: 70%;
 }
 
 .footer {
@@ -92,7 +107,7 @@ body {
   align-items: center;
   justify-content: space-between;
   background-color: $gray-light;
-  font-size: .875em;
+  font-size: convert(14, px, ems);
   padding: 0 1em;
   min-height: 74px;
 }

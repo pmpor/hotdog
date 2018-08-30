@@ -9,13 +9,13 @@
 }
 
 .jumbotron__heading {
-  margin: 1.5em auto;
-  font-size: 2.5em;
+  margin: 1em auto 1.5em auto;
+  font-size: convert(55.94, px, ems);;
   font-weight: $font-weight-light;
 }
 
 .jumbotron__wrapper {
-  max-width: 750px;
+  max-width: 1000px;
   padding: 2em 1em;
 }
 
@@ -29,8 +29,20 @@
   cursor: pointer;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .jumbotron__heading {
-    font-size: 2em;
+    font-size: 2.75em;
+  }
+}
+
+@media (max-width: 768px) {
+  .jumbotron {
+    height: 500px;
+  }
+  .jumbotron__heading {
+    font-size: 1.95em;
+  }
+  .jumbotron__logo {
+    width:convert(65, px, ems);
   }
 }

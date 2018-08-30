@@ -8,7 +8,7 @@
   background-color: $white;
   position: relative;
   font-weight: 600;
-  font-size: 1.25em;
+  font-size: convert(20, px, ems);
   flex-direction: column;
 }
 
@@ -27,5 +27,15 @@
 .nav__item {
   display: inline-block;
   text-transform: uppercase;
-  padding: 0 39px;
+  padding: 0 convert(39, px, ems);
+}
+
+@media (max-width: 768px) {
+  .header__nav {
+    font-size: convert(15, px, ems);
+  }
+
+  .nav__item {
+    padding: 0 convert(10, px, ems);
+  }
 }
