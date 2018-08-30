@@ -9,7 +9,7 @@ body {
 }
 
 .header {
-  padding-top:499px; /* Exact measurement from PSD*/
+  padding-top:250px; /* Exact measurement from PSD*/
   background:url('../../images/header/dirty-dogs-header-bg@1x.png') top center repeat-x;
   box-shadow: 0 150px 100px -100px inset rgba(0, 0, 0, .5);
   transition:all .25s ease-in-out;
@@ -90,11 +90,14 @@ body {
   }
 }
 
-@media (max-width: 768px) {
+@media (min-height: 900px) {
   .header {
-    padding-top:250px;
+    padding-top:499px;
     transition:all .25s ease-in-out;
   }
+}
+
+@media (max-width: 768px) {
   .hotdog-types__grouping {
     height: 40em;
     display: -webkit-flex;
