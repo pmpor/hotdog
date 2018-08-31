@@ -8,7 +8,7 @@ A framework such as Bootstrap was not used here due it just being a single page.
 
 ## Clarifications Needed
 
-While completing this exercise, a couple inconsistencies were noted. These are issues that would need to be clarified by the designer or BA on a typical project.
+While completing this exercise, a couple inconsistencies were noted. These are issues that would be clarified by the designer or BA on a typical project.
 
 ### Misspellings
 
