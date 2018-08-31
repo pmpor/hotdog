@@ -66,6 +66,7 @@
     order: vertical;
   }
 
+  /* Remove alternating order when collapsed */
   .hotdog-types__grouping:nth-child(odd) .hotdog-types__grouping__text {
     order: 0;
   }
