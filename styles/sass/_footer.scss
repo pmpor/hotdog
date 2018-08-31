@@ -31,9 +31,22 @@
 
 @media (max-width: 768px) {
   .footer {
-    flex-wrap: wrap;
+    display:block;
     font-size:.8em;
-    align-items: center;
-    align-content: center;
+    padding:.5em;
+  }
+
+  .footer__contact {
+    display: block;
+  }
+
+  .footer__copyright {
+    text-align: center;
+  }
+
+  .footer__contact__item {
+    display:block;
+    border-right:none;
+    text-align:center;
   }
 }
